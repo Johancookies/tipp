@@ -50,7 +50,7 @@ function TipCard() {
             </div>
             <div className="item">
               <div className="description">
-                <b className="itemTitle">Tip Amount</b>
+                <b className="itemTitle">Total</b>
                 <span className="category">/ person</span>
               </div>
               <b className="total">$0.00</b>

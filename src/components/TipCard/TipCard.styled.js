@@ -8,11 +8,17 @@ export const MainContainer = styled.div`
   -moz-box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.1);
   padding: 25px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 
   .content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   .billAmount {
@@ -38,6 +44,9 @@ export const MainContainer = styled.div`
     font-size: 16px;
     font-weight: 700;
     border-radius: 4px;
+    @media (max-width: 768px) {
+      height: 45px;
+    }
   }
 
   .inputContainer input:focus {
@@ -60,6 +69,9 @@ export const MainContainer = styled.div`
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     margin-top: 4px;
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
   }
 
   .button {
@@ -73,6 +85,10 @@ export const MainContainer = styled.div`
     font-size: 18px;
     cursor: pointer;
     transition: all 0.4s ease;
+    @media (max-width: 768px) {
+      height: 50px;
+      font-size: 22px;
+    }
   }
 
   .button:hover {
@@ -125,13 +141,13 @@ export const MainContainer = styled.div`
   }
 
   .total {
-    font-size: 40px;
+    font-size: 30px;
     color: #20c3ac;
   }
 
   .buttonReset {
     width: 100%;
-    height: 40px;
+    height: 34px;
     display: flex;
     justify-content: center;
     align-items: center;
